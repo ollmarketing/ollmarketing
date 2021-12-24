@@ -22,7 +22,7 @@ export default function Footer(props) {
         </a>
       </div>
       <div className={styles.rights}>
-        <span>Oring {new Date().getFullYear()}. All Right Reserved</span>
+        <span>Ollmarketing {new Date().getFullYear()}. All Right Reserved</span>
       </div>
     </div>
   );

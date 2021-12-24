@@ -241,7 +241,9 @@ class Signals extends Component {
               </div>
               <div className={styles.exampleTradeCards}>
                 <div className={styles.card}>
-                  <div className={styles.cardLabel}>Oring Forex Signals</div>
+                  <div className={styles.cardLabel}>
+                    Ollmarketing Forex Signals
+                  </div>
                   <div className={styles.cardInfo}>
                     <div className={styles.cardType}>SELL</div>
                     <div className={styles.cardSubInfo}>EURUSD at 1.1778</div>
@@ -259,7 +261,9 @@ class Signals extends Component {
                 </div>
 
                 <div className={styles.card}>
-                  <div className={styles.cardLabel}>Oring Forex Signals</div>
+                  <div className={styles.cardLabel}>
+                    Ollmarketing Forex Signals
+                  </div>
                   <div className={styles.cardInfo}>
                     <div className={styles.cardType}>SELL</div>
                     <div className={styles.cardSubInfo}>GBPUSD at 1.38072</div>
@@ -277,7 +281,9 @@ class Signals extends Component {
                 </div>
 
                 <div className={styles.card}>
-                  <div className={styles.cardLabel}>Oring Forex Signals</div>
+                  <div className={styles.cardLabel}>
+                    Ollmarketing Forex Signals
+                  </div>
                   <div className={styles.cardInfo}>
                     <div className={styles.cardType}>SELL</div>
                     <div className={styles.cardSubInfo}>NZDUSD at 0.7218</div>

@@ -203,11 +203,11 @@ class Homepage extends Component {
           <div className={styles.content}>
             <div className={styles.block}>
               <div className={styles.blockHeader}>
-                Oring: Top Courses & Analytics Statistics
+                Ollmarketing: Top Courses & Analytics Statistics
               </div>
               <div className={styles.blockText}>
-                Oring is a team of professionals and developers. We have checked
-                thousands of information to give you the <b>best!</b>
+                Ollmarketing is a team of professionals and developers. We have
+                checked thousands of information to give you the <b>best!</b>
               </div>
               <div className={styles.socialPic} />
             </div>

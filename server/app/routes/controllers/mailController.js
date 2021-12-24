@@ -34,16 +34,16 @@ module.exports = {
       },
     });
     let result = await transporter.sendMail({
-      from: "support@oring.com",
+      from: "support@ollmarketing.com",
       to: email,
-      subject: "Confirmation Oring account",
-      sender: "Oring",
-      html: `Confirm your email address to get started on Oring<br>Once you’ve confirmed your email address, you can access all our products.<br><br>
+      subject: "Confirmation Ollmarketing account",
+      sender: "Ollmarketing",
+      html: `Confirm your email address to get started on Ollmarketing<br>Once you’ve confirmed your email address, you can access all our products.<br><br>
             <form action="${link}">
               <button type="submit">Confirm account</button>
             </form>
             <br>
-            Oring support team
+            Ollmarketing support team
             `,
     });
 
@@ -72,16 +72,16 @@ module.exports = {
     });
 
     let result = await transporter.sendMail({
-      from: "support@oring.com",
+      from: "support@ollmarketing.com",
       to: email,
       subject: "Password Reset Request",
-      sender: "Oring",
-      html: `Click the button below to change the password for your Oring account.<br><br>
+      sender: "Ollmarketing",
+      html: `Click the button below to change the password for your Ollmarketing account.<br><br>
           <form action="${link}">
             <button type="submit">Change password</button>
           </form>
           <br>
-          Oring support team
+          Ollmarketing support team
           `,
     });
 
