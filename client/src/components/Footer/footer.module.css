@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55px;
+    align-items: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: transparent;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons a {
+    margin-right: 48px;
+    font-family: 'G-book';
+    font-size: 18px;
+    color: #636e71 !important;
+    cursor: pointer;
+}
+
+.buttons a:hover {
+    text-decoration: none;
+}
+
+.rights span {
+    font-family: 'G-book';
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 925px) {
+  .buttons a {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 32px 16px 48px;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .buttons a {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .buttons>a + a {
+    margin-top: 16px;
+  }
+
+  .rights span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    padding-left: 0;
+  }
+}

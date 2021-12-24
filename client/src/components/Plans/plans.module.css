@@ -1,0 +1,355 @@
+.plan {
+    max-height: 747px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    color: #2d3436;
+
+
+    border: solid 1px rgba(0, 0, 0, 0.05);
+
+    --accessTimeColor: #636e71;
+    --buttonTextColor: #ffffff;
+    --buttonColor: #039cfc;
+    --crossOutColor: rgba(0, 0, 0, 0.3);
+
+    transition: background-color .5s, color .5s, --crossOutColor .5s, --buttonTextColor .5s, --accessTimeColor .5s;
+
+
+}
+
+.plan:hover {
+    background-color: #039cfc;
+    color: #ffffff;
+
+    --crossOutColor: rgba(255, 255, 255, 0.5);
+    --buttonTextColor: #039cfc;
+    --buttonColor: #ffffff;
+    --accessTimeColor: rgba(255, 255, 255, 0.7);
+
+    transition: background-color .5s, color .5s, --crossOutColor .5s, --buttonTextColor .5s, --accessTimeColor .5s;
+}
+
+
+
+#star1 {
+    background-image: url('./assets/1.png');
+}
+#star2 {
+    background-image: url('./assets/2.png');
+}
+#star3 {
+    background-image: url('./assets/3.png');
+}
+
+.star {
+    width: 100%;
+    height: 152px;
+    background-size: auto auto;
+    background-position-x: center;
+    background-position-y: 56px;
+    background-repeat: no-repeat;
+}
+
+.level {
+    font-family: 'G-book';
+    font-size: 32px;
+}
+
+.accessTime {
+    font-family: 'G';
+    font-size: 24px;
+    color: var(--accessTimeColor);
+    margin-bottom: 19px;
+}
+
+.price {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.euro {
+    display: flex;
+    font-size: 24px;
+    font-family: 'G';
+    margin-right: 8px;
+    height: min-content;
+}
+
+.month {
+    height: 100%;
+    display: flex;
+    font-size: 24px;
+    font-family: 'G';
+    margin-left: 7px;
+    align-items: flex-end;
+}
+
+.count {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'G';
+    font-size: 56px;
+    height: min-content;
+    line-height: 1;
+}
+
+.line {
+    width: 320px;
+    height: 1px;
+    margin: 40px 0 24px;
+    border-radius: 0.5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list {
+    font-size: 24px;
+    font-family: 'G';
+}
+
+.notCrossOut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossOut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossOut span {
+    color: var(--crossOutColor);
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0 56px;
+    cursor: pointer;
+
+    /* font-size: 18px;
+    font-weight: 500; */
+    font-family: 'G';
+    font-size: 18px;
+    font-weight: 650;
+    /* font-family: 'G-medium'; */
+    color: var(--buttonTextColor);
+
+    width: 240px;
+    height: 56px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px -10px rgba(0, 64, 104, 0.25);
+    background-color: var(--buttonColor);
+}
+
+.plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 88px;
+    bottom: 0
+}
+
+.plans div {
+    overflow-y: visible !important;
+}
+
+.plans ul {
+    overflow-y: visible !important;
+}
+
+.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    font-family: 'G';
+    font-size: 18px;
+    font-weight: 650;
+
+    color: #ffffff;
+    
+    top: 0;
+    right: -12px;
+
+    width: 152px;
+    height: 48px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 0 rgba(255, 55, 93, 0.15);
+    background-color: #ff375d;
+
+    transform: rotate(15deg);
+}
+
+@media screen and (max-width: 1260px) {
+    .plans {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 88px;
+    }
+
+    .plan {
+        margin: 0 16px 25px;
+    }
+
+}
+
+@media screen and (max-width: 1110px) { 
+    .plans {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 990px) { 
+    .plans {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .plans {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 88px;
+    }
+
+    .save {
+        font-size: 14px;
+        top: 23px;
+        width: 100px;
+        height: 32px;
+        transform: rotate(35deg);
+    }
+
+    .plan:not(:last-child) {
+        margin-right: 29px;
+    } 
+
+    .star {
+        width: 100%;
+        height: 120px;
+        background-size: auto auto;
+        background-position-x: center;
+        background-position-y: 15px;
+    }
+
+    .plan {
+        max-height: 562px;
+        width: 280px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .plan:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .level {
+        font-size: 24px;
+    }
+    
+    .accessTime {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .euro {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    
+    .month {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    
+    .line {
+        width: 248px;
+        margin: 24px 0;
+    }
+    
+    .list {
+        font-size: 16px;
+    }
+
+    .plans {
+        margin-bottom: 24px;
+        width: 80%;
+    } 
+
+    .button {
+        font-size: 16px;
+        width: 248px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .plans {
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+
+
+
+
+    .plans li:first-child {
+        margin-left: 0 !important;
+    }
+
+    .plans ul {
+        width: 1200px !important;
+    }
+
+
+
+    .plan {
+        background-color: #039cfc;
+        color: #ffffff;
+        margin-right: 0px;
+    
+        --crossOutColor: rgba(255, 255, 255, 0.5);
+        --buttonTextColor: #039cfc;
+        --buttonColor: #ffffff;
+        --accessTimeColor: rgba(255, 255, 255, 0.7);
+    
+        transition: background-color .5s, color .5s, --crossOutColor .5s, --buttonTextColor .5s, --accessTimeColor .5s;
+    }
+
+    .plans li ~ li .plan {
+        background-color: #ffffff;
+        color: #2d3436;  
+        --accessTimeColor: #636e71;
+        --buttonTextColor: #ffffff;
+        --buttonColor: #039cfc;
+        --crossOutColor: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .plans {
+        width: 100vw;
+    }
+}

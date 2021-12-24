@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: #ffffff;
+    padding: 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.wrapper > div > div {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+}
+
+.wrapper div span {
+    width: 150px;
+}
+
+.wrapper div input {
+    width: 50px;
+    margin-right: 20px;
+}

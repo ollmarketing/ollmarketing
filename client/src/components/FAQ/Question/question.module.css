@@ -1,0 +1,166 @@
+.question {
+  font-family: 'G-book';
+  font-size: 24px;
+  color: #2d3436;
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.faq__content {
+  font-family: 'G';
+  font-size: 18px;
+  background-color: #fff;
+  margin-bottom: 16px;
+  padding: 40px;
+  border-radius: 8px;
+  color: #636e71;
+}
+
+.faq__content a{
+  color: #636e71;
+  font-weight: 750;
+}
+
+.faq__content a:hover {
+  text-decoration: none;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  height: 93px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  padding-left: 40px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 16px;
+  transition: all 1s;
+  transition-property: margin;
+}
+
+.question {
+  padding: 32px 40px;
+}
+
+
+
+.questionInner {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  transition: margin-left .5s;
+  line-height: 29px;
+
+}
+
+.icon {
+  margin-right: 32px;
+}
+
+
+details[open] summary {
+  margin-bottom: 20px;
+}
+
+details[open] .text {
+  transition: margin-left .5s;
+  margin-left: 8px;
+}
+
+details[open] summary~* {
+  animation: sweep .5s ease-in;
+}
+
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0px
+  }
+}
+
+details .icon {
+  background-image: url('../assets/plus.svg');
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+details[open] .icon {
+  background-image: url('../assets/minus.svg');
+  width: 29px;
+  height: 32px;
+  transform: rotate(90deg);
+  background-repeat:repeat;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+details>summary {
+  list-style: none;
+}
+
+@media (max-width: 830px) {
+  .icon {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  summary {
+  height: 70px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+  
+  .question {
+    padding: 16px;
+  }
+
+  details .icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+  }
+  
+  details[open] .icon {
+    width: 21px;
+    height: 16px;
+    background-size: contain;
+  }
+
+  .faq__content {
+    font-family: 'G';
+    font-size: 18px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    color: #636e71;
+  }
+
+  .text {
+    line-height: 19px;
+  }
+}

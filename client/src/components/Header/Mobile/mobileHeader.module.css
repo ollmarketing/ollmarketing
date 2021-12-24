@@ -1,0 +1,219 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  justify-content: space-between;
+  padding: 16px;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-image: url('/assets/bgMobile.png'); */
+  background-image: url('/assets/bgMobile.png');
+  background-size: 100%;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 104px;
+}
+
+.burger {
+  width: 16px;
+  height: 16px;
+  background-image: url('./assets/burger.svg');
+  background-repeat: no-repeat;
+  fill: #2d3436;
+  cursor: pointer;
+}
+
+.logo {
+  width: 72px;
+  height: 14px;
+  background-image: url('./assets/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  fill:#2d3436;
+}
+
+.loginButton {
+  min-width: 120px;
+  height: 40px;
+  background-color: #039cfc;
+  box-shadow: 0 10px 20px -10px rgba(0, 64, 104, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginButton span {
+  /* font-family: 'G-medium';
+  font-weight: 500; */
+  font-weight: 650;
+    font-family: 'G';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.lineWrapper {
+  position: fixed;  
+  width: 100%;
+  padding: 0 16px;
+  right: 0;
+  top: 72px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-radius: 0.5px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* MENU */
+.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.close {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bgShadow {
+  position: fixed;
+  inset: 0px;
+  display: flex;
+  background: rgba(0, 0, 0, .5);
+  z-index: 180;
+}
+
+.bg {
+  position: fixed;
+  z-index: 190;
+  background-image: url('/assets/bgMobile.png');
+  max-width: 375px;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  height: 100vh;
+  padding: 0 16px;
+  z-index: 200;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5px;
+  padding: 25px 0;
+  margin-bottom: 32px;
+}
+
+.menuHeaderLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 76px;
+}
+
+.cross {
+  width: 12px;
+  height: 12px;
+  background-image: url('./assets/cross.svg');
+  fill: #2d3436;
+  cursor: pointer;
+}
+
+.label {
+  font-family: 'G-book';
+  font-size: 18px;
+  color: #2d3436;
+}
+
+.menuHeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+.user {
+  font-family: 'G-book';
+  font-size: 14px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logout {
+  width: 16px;
+  height: 16px;
+  background-image: url('./assets/logout.svg'); 
+  opacity: 0.3;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.menuRow {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.menuRow a{
+  font-family: 'G-book';
+  font-size: 14px;
+  text-decoration: none;
+  color: #2d3436;
+}
+
+.menuRow a:hover {
+  text-decoration: none;
+}
+
+.menuRow a.active {
+  color: #039cfc;
+  padding-left: 16px;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  left: 0px;
+  top: 6px;
+  background-color: #039cfc;
+}
+
+@media (min-height: 831px) and (min-width: 831px) {
+  .header {
+    background-color: #fff;
+    z-index: 125;
+  }
+}
+
+@media (max-width: 830px) {
+  .header{
+    background-image: url('/assets/bgMobile.png');
+    background-size: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+.tableTraders {
+  font-family: 'G-book';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 750px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 0;
+  color: #2d3436;
+  margin-bottom: 40px;
+}
+
+.tableTradersHeader {
+  font-size: 18px;
+  padding-left: 16px;
+}
+
+.trader {
+  width: 100%;
+  padding: 16px 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 16px;
+}
+
+.traderName {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.traderName a {
+  text-decoration: none;
+}
+
+.traderRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.traderRowLeft {
+  font-family: 'G';
+  color: #636e71;
+}
+
+@media (max-width: 830px)  {
+  .tableTraders {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  /* .tableTraders {
+    width: 100%;
+  }  HOME PAGE*/
+
+  .tableTradersHeader {
+    font-size: 14px;
+  }
+
+  .traderName {
+    font-size: 14px;
+  }
+
+  .traderRow {
+    font-size: 12px;
+  }
+}

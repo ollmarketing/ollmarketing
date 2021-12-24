@@ -1,0 +1,410 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.bg {
+    position: fixed;
+    z-index: -2;
+    background-image: url('./assets/bg.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.content {
+  width: 100%;
+  max-width: 1264px;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.block + .block{
+  margin-top: 112px;
+}
+
+.blockHeader {
+    font-family: 'G-book';
+    font-size: 48px;
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 24px;
+}
+
+.blockText {
+    font-family: 'G';
+    font-size: 24px;
+    width: 80%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #636e71;
+    margin-bottom: 80px;
+}
+
+.socialPic {
+  max-width: 900px;
+  width: 100%;
+  height: 320px;
+  background-image: url('./assets/social.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 80px 0 112px;
+    border-radius: 0.5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tradersTable {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 1016px;
+    height: 432px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    margin-bottom: 77px;
+    z-index: 3;
+}
+
+.tradersTableHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 67px;
+    padding: 0 40px;
+    justify-content: start;
+    align-items: center;
+    font-family: 'G-book';
+    font-size: 16px;
+    color: #2d3436;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5px;
+}
+
+.tradersTableHeader span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 204px;
+    margin-right: 40px;
+}
+
+.tradersTableHeader span div {
+    cursor: pointer;
+    height: 15px;
+    width: 8px;
+    background-image: url('./assets/filterArrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+.tradersTableRow {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    flex-direction: row;
+    padding: 0 40px;
+    width: 100%;
+    height: 67px;
+    justify-content: start;
+    align-items: center;
+    font-family: 'G-book';
+    font-size: 16px;
+    height: 73px;
+    color: #636e71;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5px;
+}
+
+.tradersTableRow span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 204px;
+    margin-right: 40px;
+}
+
+.tradersTableRow a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 204px;
+    margin-right: 40px;
+}
+
+.tradersTableRow a:hover {
+  text-decoration: none;
+}
+
+.shadowTable {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 942px;
+    height: 262px;
+    border-radius: 8px;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.blockButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 296px;
+    height: 72px;
+    padding: 22px 80px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px -10px rgba(0, 64, 104, 0.25);
+    background-color: #039cfc;
+}
+
+.blockButton a {
+    /* font-weight: 500;
+    font-family: 'G-medium'; */
+    font-weight: 650;
+    font-family: 'G';
+    font-size: 22px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    width: 296px;
+}
+
+.blockButton a {
+  font-family: 'G';
+    font-size: 22px;
+    font-weight: 650;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  text-decoration: none;
+  width: auto;
+}
+
+.blockButton span {
+    font-family: 'G';
+    font-size: 22px;
+    font-weight: 650;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.analystPic {
+    width: 100%;
+    height: 459px;
+    background-image: url('./assets/analyst.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 56px;
+}
+
+.subBar {
+    display: flex;
+    position: relative;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1264px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);;
+    margin-bottom: 56px;
+}
+
+.subBar span {
+    cursor: pointer;
+    font-family: 'G-book';
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 44px;
+    text-align: center;
+}
+
+@media (max-width: 1264px) {
+
+  .wrapper {
+    padding-bottom: 0;
+  }
+
+  .content {
+    padding: 0px 16px 16px;
+  }
+
+  .tradersTable {
+    width: 100%;
+    max-width: 1016px;
+  }
+
+  .shadowTable {
+    width: 100%;
+    max-width: 942px;
+  }
+
+  .subBar {
+    min-width: 832px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 860px) { 
+  .subBar {
+    min-width: auto;
+  }
+}
+
+
+@media (max-height: 729px) {
+  .content {
+    padding-top: 121px;
+  }
+
+  .socialPic {
+    height: 257px;
+  }
+
+  .line {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 830px) {
+  
+  .bg {
+    background-image: url('/assets/bgMobile.png');
+  }
+
+  .wrapper {
+    padding-bottom: 0;
+  }
+
+  .content {
+    padding-top: 121px;
+  }
+
+  
+}
+
+@media (max-width: 750px) {
+  .block + .block{
+    margin-top: 48px;
+  }
+  
+  .blockHeader {
+      margin-bottom: 16px;
+  }
+  
+  .blockText {
+      margin-bottom: 40px;
+  }
+
+  .line {
+    margin-top: 30px;
+    margin-bottom:  48px;
+  }
+}
+
+@media (max-width: 740px) { 
+  .subBar span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .line {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .subBar span {
+    font-size: 16px;
+  }
+
+  .subBar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .socialPic {
+    height: 160px;
+  }
+  .line {
+    margin-top: 40px;
+  }
+
+  .analystPic {
+    height: 345px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .blockHeader {
+    font-size: 24px;
+  }
+
+  .blockText {
+    font-size: 16px;
+  }
+
+  .blockButton {
+    width: 256px;
+    height: 56px;
+    padding: 19px 60px;
+}
+
+.blockButton a {
+  font-size: 14px;
+}
+
+.blockButton span {
+    font-size: 14px;
+}
+
+.analystPic {
+  margin-bottom: 41px;
+  height: 215px;
+}
+
+}
+
+@media (max-width: 375px) {
+  .socialPic {
+    height: 112px;
+  }
+}

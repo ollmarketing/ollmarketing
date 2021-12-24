@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-dotenv/src/cli.js b/node_modules/react-dotenv/src/cli.js
+index 6e01131..74ac9a7 100644
+--- a/node_modules/react-dotenv/src/cli.js
++++ b/node_modules/react-dotenv/src/cli.js
+@@ -12,7 +12,7 @@ const pick = require("lodash/pick");
+ const appPackage = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../../package.json")));
+ 
+ /** Load app's .env file */
+-dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
++dotenv.config({ path: path.resolve(__dirname, "../../../../.env") });
+ 
+ /**
+  * Read environment variables whitelist

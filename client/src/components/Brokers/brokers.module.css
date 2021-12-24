@@ -1,0 +1,198 @@
+.bg {
+    position: fixed;
+    z-index: -2;
+    background-image: url('/assets/bg.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1264px;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+
+    font-family: 'G-book';
+    font-size: 48px;
+    color: #2d3436;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 56px;
+
+    font-family: 'G';
+    font-size: 24px;
+    color: #636e71;
+}
+
+.broker {
+    width: 292px;
+    height: 496px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.brokerImage {
+    width: 100%;
+    height: 292px;
+    margin-bottom: 20px;
+
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.brokerTitle {
+    font-family: 'G-book';
+    font-size: 24px;
+    color: #2d3436;
+    width: 100%;
+
+
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.brokerText {
+    font-family: 'G';
+    font-size: 18px;
+    color: #636e71;
+    margin-bottom: 24px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link a {
+    width: 244px;
+    height: 56px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px -10px rgba(0, 64, 104, 0.25);
+    background-color: #039cfc;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* font-weight: 500;
+    font-family: 'G-medium'; */
+    font-weight: 650;
+    font-family: 'G';
+    font-size: 18px;
+    color: #fff;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
+
+.brokers {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+@media (max-height: 729px) {
+  .content {
+    padding-top: 121px;
+  }
+}
+
+@media (max-width: 1264px) {
+
+  .wrapper {
+    padding-bottom: 0;
+  }
+
+  .content {
+    padding: 0px 16px 16px;
+  }
+
+  .brokers {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .wrapper {
+    padding-bottom: 0;
+  }
+
+  .content {
+    padding-top: 121px;
+  }
+
+  .brokers {
+    justify-content: space-around;
+    margin-bottom: 26px;
+  }
+
+  .broker {
+    margin-right: 16px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .broker {
+    margin-right: 0px !important;
+  }
+}

@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #ffffff;
+    padding: 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 296px;
+    height: 72px;
+    font-size: 22px;
+    background-color: #039cfc;
+    border-radius: 8px;
+    margin-right: 50px;
+}

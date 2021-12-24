@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    max-width: 1264px;
+    height: 96px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5px;
+    background: transparent;
+    margin-bottom: 112px;
+
+    --linkColor: #2d3436;
+
+}
+
+.active {
+    --linkColor: #039cfc;
+}
+  
+.buttons a {
+    font-family: 'G-book';
+    height: min-content;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--linkColor);
+    margin-right: 48px;
+}
+
+.buttons a:hover {
+    text-decoration: none;
+}
+
+.loginButton {
+    width: 136px;
+    height: 48px;
+    background-color: #039cfc;
+    box-shadow: 0 10px 20px -10px rgba(0, 64, 104, 0.25);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginButton span {
+    font-family: 'G';
+    font-size: 16px;
+    font-weight: 750;
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.logo {
+    background-image: url('./assets/logo.svg');
+    width: 72px;
+    height: 13px;
+}
+
+.logoActive {
+    filter: invert(42%) sepia(99%) saturate(2403%) hue-rotate(180deg) brightness(104%) contrast(98%);
+}

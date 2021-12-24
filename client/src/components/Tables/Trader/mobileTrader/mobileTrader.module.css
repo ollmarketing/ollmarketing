@@ -1,0 +1,51 @@
+.tableIdeas {
+  font-family: 'G-book';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 750px;
+  padding: 16px 0;
+  color: #2d3436;
+  margin-bottom: 40px;
+}
+
+.idea {
+  width: 100%;
+  padding: 24px 16px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+
+}
+
+.ideaName {
+  font-family: 'G-book';
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.ideaRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 100%;
+}
+
+@media (max-width: 500px)  {
+  .tableIdeas {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .ideaName {
+    font-size: 14px;
+  }
+
+  .traderRow {
+    font-size: 12px;
+  }
+}
