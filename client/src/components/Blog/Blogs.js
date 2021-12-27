@@ -53,7 +53,7 @@ class Blogs extends Component {
             </div>
             <div className={styles.blogText}>{blogs[key].text}</div>
             <div className={styles.showMore}>
-              <Link to={`/blog/${blogs[key]._id}`}>Show more</Link>
+              <Link to={`/blog/${blogs[key]._id}`}>Explore</Link>
             </div>
           </div>
         );
@@ -92,7 +92,7 @@ class Blogs extends Component {
           <div className={styles.content}>
             {/* {!this.state.isMobile ? <Header /> : false} */}
             <div className={styles.block}>
-              <div className={styles.title}>Course</div>
+              <div className={styles.title}>Offers</div>
               <div className={styles.blogs}>{this.state.blogBlocks}</div>
             </div>
             <Footer />

@@ -194,13 +194,16 @@ function Plans(props) {
       </div>
       <div className={homepageStyles.subBar}>
         <span id={1} onClick={() => onClickSub(1)} style={{ width: "100%" }}>
-          Management
+          Market research
         </span>
         <span id={2} onClick={() => onClickSub(2)}>
-          Business analyse
+          Investigation
         </span>
         <span id={3} onClick={() => onClickSub(3)}>
-          Social qualities
+          Testing and Automation
+        </span>
+        <span id={4} onClick={() => onClickSub(4)}>
+          Software engineering
         </span>
       </div>
 

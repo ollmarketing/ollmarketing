@@ -70,7 +70,7 @@ class Blog extends Component {
               {recomendedBlogs[key].text}
             </div>
             <div className={styles.showMore}>
-              <Link to={`/blog/${recomendedBlogs[key]._id}`}>Show more</Link>
+              <Link to={`/blog/${recomendedBlogs[key]._id}`}>Explore</Link>
             </div>
           </div>
         </div>

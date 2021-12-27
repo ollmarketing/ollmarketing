@@ -57,7 +57,10 @@ function Plan(props) {
 
   const onClickGet = async (data) => {
     props.getRate().then((rate) => {
-      if (props.isAuth.auth.isAuthenticated) {
+      if (
+        props.isAuth.auth.isAuthenticated ||
+        !props.isAuth.auth.isAuthenticated
+      ) {
         setIsLoading(true);
 
         const type =
@@ -154,8 +157,8 @@ function Plan(props) {
         </div>
         <div className={styles.line} />
         <div className={styles.list}>
-          <div className={styles.notCrossOut}>list</div>
-          <div className={styles.crossOut}>crossOutList</div>
+          <div className={styles.notCrossOut}>All information included</div>
+          <div className={styles.crossOut}>Click button below</div>
         </div>
         <div
           className={styles.button}
@@ -169,7 +172,7 @@ function Plan(props) {
             })
           }
         >
-          GET NOW
+          EXPLORE
         </div>
       </div>
       {/* {showForm ? (

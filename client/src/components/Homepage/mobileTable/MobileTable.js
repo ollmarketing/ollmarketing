@@ -92,7 +92,7 @@ function MobileTable(props) {
 
   return (
     <div className={styles.tableTraders}>
-      <div className={styles.tableTradersHeader}> Top traders</div>
+      <div className={styles.tableTradersHeader}> Top teachers</div>
       {tableValues}
     </div>
   );

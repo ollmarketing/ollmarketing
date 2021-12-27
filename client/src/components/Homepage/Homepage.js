@@ -213,65 +213,7 @@ class Homepage extends Component {
             </div>
             <div className={styles.line} />
             <div className={styles.block}>
-              <div className={styles.blockHeader}>Teachers</div>
-              <div className={styles.blockText}>
-                Here you can see sources we checked:
-              </div>
-              {!this.state.isMobile ? (
-                <div className={styles.tradersTable}>
-                  <div className={styles.tradersTableHeader}>
-                    <span>Source name</span>
-                    <span>
-                      Number of ideas{" "}
-                      <div onClick={() => this.onClickTableSort(1)} />
-                    </span>
-                    <span>
-                      Successful ideas{" "}
-                      <div onClick={() => this.onClickTableSort(2)} />
-                    </span>
-                    <span style={{ margin: 0 }}>
-                      Successful percentage{" "}
-                      <div onClick={() => this.onClickTableSort(3)} />
-                    </span>
-                  </div>
-                  {this.state.traderTableRows}
-                  <div className={styles.shadowTable} />
-                </div>
-              ) : this.state.traders ? (
-                <MobileTable
-                  isAuth={this.props.homepageState.auth.isAuthenticated}
-                  newTraders={[]}
-                  nothingFound={false}
-                  traders={this.state.traders.slice().splice(2)}
-                  openLogin={this.handleModalChange}
-                />
-              ) : null}
-              <div
-                className={styles.blockButton}
-                onClick={() => {
-                  this.props.homepageState.auth.isAuthenticated
-                    ? this.props.history.push("/traders")
-                    : this.handleModalChange("login");
-                  if (this.state.isMobile) {
-                    setTimeout(() => {
-                      window.scrollTo(0, 0);
-                    }, 300);
-                  }
-                }}
-              >
-                {this.props.homepageState.auth.isAuthenticated ? (
-                  <Link to="/traders" className={styles.linkToTable}>
-                    SHOW FULL
-                  </Link>
-                ) : (
-                  <div className={styles.linkToTable}>
-                    <span onClick={this.openLog}>SHOW FULL</span>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className={styles.block}>
-              <div className={styles.blockHeader}>TraderStat Signals</div>
+              <div className={styles.blockHeader}>Ollmarketing Signals</div>
               <div className={styles.blockText} style={{ maxWidth: "700px" }}>
                 We collect top documents & volume, analyse them with out
                 algorithms to make the good call with best average profit.

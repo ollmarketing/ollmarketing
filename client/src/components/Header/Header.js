@@ -45,7 +45,7 @@ function Header(props) {
             Brokers
           </NavLink> */}
           <NavLink to="/blog" activeClassName={styles.active}>
-            Courses{/* Blog */}
+            Offers{/* Blog */}
           </NavLink>
           <NavLink to="/FAQ" activeClassName={styles.active}>
             FAQ
@@ -53,15 +53,15 @@ function Header(props) {
           {/*<NavLink to="/about" activeClassName={styles.active}>
             About Us
           </NavLink> */}
-          <Login show={modalState.login} exit={handleModalChange} />
-          <Registration
+          {/* <Login show={modalState.login} exit={handleModalChange} /> */}
+          {/* <Registration
             show={modalState.registration}
             exit={handleModalChange}
           />
           <RestorePassword
             show={modalState.restorePassword}
             exit={handleModalChange}
-          />
+          /> */}
         </div>
         {props.isAuth.auth.isAuthenticated ? (
           <div className={styles.loginButton} onClick={() => props.signOut()}>
