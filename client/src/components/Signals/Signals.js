@@ -201,16 +201,7 @@ class Signals extends Component {
               <div
                 className={styles.blockButton}
                 onClick={() => {
-                  if (this.props.signalsState.auth.isAuthenticated) {
-                    window.scrollTo(0, 2540);
-                  } else {
-                    this.handleModalChange("registration");
-                    if (this.state.isMobile) {
-                      setTimeout(() => {
-                        window.scrollTo(0, 0);
-                      }, 300);
-                    }
-                  }
+                  window.scrollTo(0, 2540);
                 }}
               >
                 <span

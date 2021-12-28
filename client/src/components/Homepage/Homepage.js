@@ -49,22 +49,9 @@ class Homepage extends Component {
     for (const key in traders) {
       tableValues.push(
         <div className={styles.tradersTableRow} key={Math.random(123)}>
-          {this.props.homepageState.auth.isAuthenticated ? (
-            <Link
-              to={
-                this.props.homepageState.auth.isAuthenticated
-                  ? `/traders/${traders[key]._id}`
-                  : null
-              }
-              style={{ color: "#039cfc" }}
-            >
-              {traders[key].name}
-            </Link>
-          ) : (
-            <span style={{ color: "#039cfc" }} onClick={this.openLog}>
-              {traders[key].name}
-            </span>
-          )}
+          <Link to={null} style={{ color: "#039cfc" }}>
+            {traders[key].name}
+          </Link>
 
           <span>{traders[key].ideas_count}</span>
           <span>{traders[key].successful_count}</span>
@@ -222,30 +209,12 @@ class Homepage extends Component {
               <div
                 className={styles.blockButton}
                 onClick={() => {
-                  if (this.props.homepageState.auth.isAuthenticated) {
-                    window.scrollTo(0, 2950);
-                  } else {
-                    this.handleModalChange("registration");
-                    if (this.state.isMobile) {
-                      setTimeout(() => {
-                        window.scrollTo(0, 0);
-                      }, 300);
-                    }
-                  }
+                  window.scrollTo(0, 2950);
                 }}
               >
                 <span
                   onClick={() => {
-                    if (this.props.homepageState.auth.isAuthenticated) {
-                      window.scrollTo(0, 2950);
-                    } else {
-                      this.handleModalChange("registration");
-                      if (this.state.isMobile) {
-                        setTimeout(() => {
-                          window.scrollTo(0, 0);
-                        }, 300);
-                      }
-                    }
+                    window.scrollTo(0, 2950);
                   }}
                 >
                   JOIN TODAY

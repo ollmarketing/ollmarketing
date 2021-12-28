@@ -70,7 +70,7 @@ function Header(props) {
             exit={handleModalChange}
           /> */}
         </div>
-        {props.isAuth.auth.isAuthenticated ? (
+        {/* {props.isAuth.auth.isAuthenticated ? (
           <div className={styles.loginButton} onClick={() => props.signOut()}>
             <span>LOGOUT</span>
           </div>
@@ -81,7 +81,7 @@ function Header(props) {
           >
             <span>LOGIN</span>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
