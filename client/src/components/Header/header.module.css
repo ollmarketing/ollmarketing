@@ -60,8 +60,10 @@
 
 .logo {
   background-image: url("./assets/logo.png");
-  width: 72px;
-  height: 13px;
+  width: 120px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .logoActive {

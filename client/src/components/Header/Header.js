@@ -33,7 +33,7 @@ function Header(props) {
         <div className={styles.buttons}>
           <NavLink
             to="/"
-            activeClassName={styles.logoActive}
+            // activeClassName={styles.logoActive}
             isActive={checkActive}
           >
             <div className={styles.logo} />
