@@ -58,7 +58,7 @@ function MobileHeader(props) {
         }
       >
         <div className={styles.wrapper}>
-          <div className={styles.menuHeader}>
+          {/* <div className={styles.menuHeader}>
             <div className={styles.menuHeaderLeft}>
               <div className={styles.cross} onClick={() => setOpen(!open)} />
               <div className={styles.label}>Menu</div>
@@ -72,7 +72,7 @@ function MobileHeader(props) {
                 />
               </div>
             ) : null}
-          </div>
+          </div> */}
           <div className={styles.menu}>
             <div className={styles.menuRow}>
               <NavLink
@@ -83,19 +83,19 @@ function MobileHeader(props) {
                 Home
               </NavLink>
             </div>
-            <div className={styles.menuRow}>
+            {/* <div className={styles.menuRow}>
               <NavLink to="/signals" activeClassName={styles.active}>
                 Signals
               </NavLink>
-            </div>
-            <div className={styles.menuRow}>
+            </div> */}
+            {/* <div className={styles.menuRow}>
               <NavLink to="/brokers" activeClassName={styles.active}>
                 Brokers
               </NavLink>
-            </div>
+            </div> */}
             <div className={styles.menuRow}>
               <NavLink to="/blog" activeClassName={styles.active}>
-                Blog
+                Offers
               </NavLink>
             </div>
             <div className={styles.menuRow}>
@@ -103,11 +103,11 @@ function MobileHeader(props) {
                 FAQ
               </NavLink>
             </div>
-            <div className={styles.menuRow}>
+            {/* <div className={styles.menuRow}>
               <NavLink to="/about" activeClassName={styles.active}>
                 About Us
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
