@@ -73,7 +73,7 @@ function MobileHeader(props) {
               </div>
             ) : null}
           </div> */}
-          <div className={styles.menu}>
+          <div className={styles.menu} style={{}}>
             <div className={styles.menuRow}>
               <NavLink
                 to="/"
@@ -174,10 +174,11 @@ function MobileHeader(props) {
                 : closeAllModal
             }
           >
-            <div className={styles.logo} />
+            {/* <div className={styles.logo} /> */}
+            <div style={{ fontSize: "28px" }}>Ollmarketing</div>
           </Link>
         </div>
-        <div className={styles.headerRight}>
+        {/* <div className={styles.headerRight}>
           {props.isAuth.auth.isAuthenticated ? (
             <div className={styles.loginButton} onClick={() => props.signOut()}>
               <span>LOGOUT</span>
@@ -220,7 +221,7 @@ function MobileHeader(props) {
               <span>LOGIN</span>
             </div>
           )}
-        </div>
+        </div> */}
         <div className={styles.lineWrapper}>
           <div className={styles.line}></div>
         </div>

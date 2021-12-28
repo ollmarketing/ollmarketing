@@ -31,19 +31,26 @@ function Header(props) {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div className={styles.wrapper}>
         <div className={styles.buttons}>
-          <NavLink
+          {/* <NavLink
             to="/"
             // activeClassName={styles.logoActive}
             isActive={checkActive}
           >
             <div className={styles.logo} />
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink to="/signals" activeClassName={styles.active}>
             Signals
           </NavLink> */}
           {/* <NavLink to="/brokers" activeClassName={styles.active}>
             Brokers
           </NavLink> */}
+          <NavLink
+            to="/"
+            activeClassName={styles.active}
+            style={{ fontSize: "28px" }}
+          >
+            Ollmarketing{/* Blog */}
+          </NavLink>
           <NavLink to="/blog" activeClassName={styles.active}>
             Offers{/* Blog */}
           </NavLink>
